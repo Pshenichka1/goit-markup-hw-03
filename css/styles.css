@@ -12,24 +12,31 @@ body {
     font-family: Roboto, sans-serif;    
 }
 .box { 
-    width: 1600px;    
+       
     border: 1px solid #ECECEC;
 }
 .container,
 .container-header,
-.container-footer {
+.container-footer,
+.container-portfolio {
     width: 1200px;
     padding-left: 15px;
-    padding-right: 15px; 
+    padding-right: 15px;
+    margin: 0 auto; 
         
 }
-.container {
+.container,
+.container-portfolio {
+  
     padding-bottom: 94px;
 }
 .container-header,
 .container-footer {
     padding-top: 0;
 }
+.container-portfolio {
+    padding-top: 93px;
+}   
 
 .site-nav {
     display: flex;
@@ -154,6 +161,8 @@ body {
 /* gero */
 .section-gero {  
     margin: 0 auto;
+    padding-top: 14px;
+    padding-bottom: 80px;
         
     background-color: #2F303A; 
     text-align: center;
@@ -178,7 +187,7 @@ body {
     min-width: 216px;  
     border-radius: 4px;
     padding: 10px 32px; 
-    margin-bottom: 200px;
+    
         
     color: #FFFFFF;
     background-color: #2196F3;
@@ -196,33 +205,44 @@ body {
 .button-gero:active {
     color: #2F303A;
 }
+
 /* section our-advantages */
 
+.advantages {
+    padding-top: 94px;
+}
+
 .our-advantages-title { 
-    padding-top:  94px;
-    padding-bottom: 10px;
-    margin-bottom: 0px; 
+    
+    margin-bottom: 10px; 
     margin-top: 0;
+    margin-right: 30px;
+
     color: var(--color-title);
     font-size: 14px;
     line-height: 1.1721;
     letter-spacing: 0.03em; 
     
+} 
+.our-advantages:not(:last-child) {
+    margin-right: 30px;
 }
 .our-advantages {
+    display: inline-block;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0; 
+    
     color: var(--color-gray);
     font-size: 14px;
-    line-height: 1.1743;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     
 }
 .section-title { 
     margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    
+    
     color: var(--color-title);
     font-size: 36px;
     line-height: 1.1719;
@@ -235,24 +255,25 @@ body {
 
 /* section team */
 .team { 
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
     color: var(--color-title);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1719;    
     letter-spacing: 0.03em;
+    text-align: center;
 }
 .specialist {  
     margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    
     color: var(--color-gray);    
     font-size: 16px;
     line-height: 1.1719;   
     letter-spacing: 0.03em;
+    text-align: center;
 }
 /* footer */
 .logo-footer {
@@ -268,7 +289,7 @@ body {
     
 }
 .section-foot { 
-    width: 1600px;
+    
     background-color: #2F303A;
 }  
 .contacts-foot-address {
@@ -284,7 +305,7 @@ body {
 .contacts-foot { 
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
     font-size: 14px;
     line-height: 1.7143;
     letter-spacing: 0.03em;
@@ -299,6 +320,7 @@ body {
 .portfolio-list {
     display: flex;
     justify-content: center;
+    border-top: 1px solid #ECECEC;
    
 }
 
