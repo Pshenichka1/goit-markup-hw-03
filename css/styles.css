@@ -25,18 +25,13 @@ body {
     margin: 0 auto; 
         
 }
-.container,
-.container-portfolio {
-  
-    padding-bottom: 94px;
-}
 .container-header,
 .container-footer {
     padding-top: 0;
 }
-.container-portfolio {
-    padding-top: 93px;
-}   
+
+    
+  
 
 .site-nav {
     display: flex;
@@ -64,6 +59,11 @@ body {
  }    
  .our-advantages-list {
     display: flex;
+  }
+ .our-advantages-item {
+    width: 270px;
+    margin-right: 30px;
+
  }
  .img-list {
     display: flex;
@@ -161,8 +161,8 @@ body {
 /* gero */
 .section-gero {  
     margin: 0 auto;
-    padding-top: 14px;
-    padding-bottom: 80px;
+    padding-top: 200px;
+    padding-bottom: 200px;
         
     background-color: #2F303A; 
     text-align: center;
@@ -171,7 +171,7 @@ body {
 .gero-title { 
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
+    
 
     color: #FFFFFF;
     font-weight: 900;
@@ -210,13 +210,14 @@ body {
 
 .advantages {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our-advantages-title { 
     
     margin-bottom: 10px; 
     margin-top: 0;
-    margin-right: 30px;
+    
 
     color: var(--color-title);
     font-size: 14px;
@@ -224,8 +225,8 @@ body {
     letter-spacing: 0.03em; 
     
 } 
-.our-advantages:not(:last-child) {
-    margin-right: 30px;
+.our-advantages-item:last-child {
+    margin-right: 0;
 }
 .our-advantages {
     display: inline-block;
@@ -238,24 +239,35 @@ body {
     letter-spacing: 0.03em;
     
 }
-.section-title { 
+
+/* section images */
+
+.section-img {
+    padding-bottom: 94px;
+}
+.section-title {
     margin-top: 0;
     margin-bottom: 50px;
-    
-    
+
+
     color: var(--color-title);
     font-size: 36px;
     line-height: 1.1719;
     letter-spacing: 0.03em;
     text-align: center;
-    
+
 }
-/* section images */
 
 
 /* section team */
+
+.section-team {
+    padding-top: 94px;
+    padding-bottom: 94px; 
+    background-color:#F5F4FA ;
+}
 .team { 
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
     
     color: var(--color-title);
@@ -267,45 +279,58 @@ body {
 }
 .specialist {  
     margin-top: 0;
-    margin-bottom: 30px;
-    
+    margin-bottom: 0;
+       
     color: var(--color-gray);    
     font-size: 16px;
     line-height: 1.1719;   
     letter-spacing: 0.03em;
     text-align: center;
 }
+.team-specialist {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+
+}
 /* footer */
 .logo-footer {
     display: inline-block;
-
-    padding-top: 60px;
+  
     
 }
 .address {
     font-style: normal;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    
+   
     
 }
-.section-foot { 
+.section-foot {  
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     background-color: #2F303A;
 }  
 .contacts-foot-address {
+    margin-bottom: 9px; 
+    margin-top: 20px;
     color: #FFFFFF;
 }  
+.foot-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 
    
                                            
 .contacts-foot {
+    
     color: rgba(255, 255, 255, 0.6);
 }
 .contacts-foot-address,
 .contacts-foot { 
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-bottom: 9px;
+    
+    
+    
     font-size: 14px;
     line-height: 1.7143;
     letter-spacing: 0.03em;
@@ -317,22 +342,26 @@ body {
 .page-portfolio {
     background-color: var(--color-white);
 }
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-list {
     display: flex;
-    justify-content: center;
-    border-top: 1px solid #ECECEC;
+    justify-content: center; 
+    margin-bottom: 50px;
+    
    
 }
 
 /* button potrfolio */
-
-    
+   
 .list-button:last-child {
     margin-right: 0;
 }
 .list-button {
     margin-right: 8px;
-    margin-bottom: 50px;
+    
 }
 .button {
     padding: 6px 22px;
@@ -382,6 +411,7 @@ body {
     flex-basis: calc((100% - 60px) / 3);
 } 
 .box-projects {
+    padding: 20px 24px;
     width: 370px;
     border: 1px solid #EEEEEE;
 }
@@ -394,9 +424,7 @@ body {
     
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 4px;
-    padding-left: 24px;
+       
     color: var(--color-title);
     font-size: 18px;
     line-height: 2;
@@ -406,8 +434,7 @@ body {
 .list-services {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 20px;
-    padding-left: 24px;
+      
     color: var(--color-gray);
     font-size: 16px;
     line-height: 1.875;
